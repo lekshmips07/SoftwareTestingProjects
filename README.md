@@ -6,8 +6,8 @@ This repository contains a complete manual testing suite for a sample applicatio
 ## 📌 Project Overview
 
 - **Project Type**: Manual Testing
-- **Application Under Test (AUT)**: [Insert app or module name here]
-- **Purpose**: Ensure the application behaves as expected through manual test execution
+- **Application Under Test (AUT)**: [ ﻿app.vwo.com]
+- **Purpose**: Validate the login credentials
 - **Testing Approach**: Structured, requirement-based testing using detailed documentation
 
 ---
