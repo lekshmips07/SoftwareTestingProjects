@@ -55,9 +55,3 @@ Summary of test execution, including:
 - Recommendations  
 
 ---
-
-## 🚀 Getting Started
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/manual-testing-project.git
