@@ -5,7 +5,7 @@ This repository contains a complete manual testing suite for a sample applicatio
 
 ## 📌 Project Overview
 
-- **Project Type**: Manual Testing
+- **Project Type**: Testing
 - **Application Under Test (AUT)**: [ ﻿app.vwo.com]
 - **Purpose**: Validate the login credentials
 - **Testing Approach**: Structured, requirement-based testing using detailed documentation
@@ -24,19 +24,24 @@ This repository contains a complete manual testing suite for a sample applicatio
 
 ## 📄 Documents Included
 
-### 📝 Test_Plan.md
+### 📝 Test_Plan - VWO.docx.pdf
 Outlines test objectives, scope, approach, schedule, roles, tools, and risks.
 
 ### 📊 Test_Cases.xlsx
 Contains detailed test cases with the following fields:
-- Test Case ID  
-- Module/Feature  
-- Test Steps  
-- Preconditions  
-- Expected Result  
-- Actual Result  
-- Status (Pass/Fail)  
-- Remarks  
+- Scenario Test ID
+- Scenario
+- Test Case ID
+- Test data
+- Testcase title
+- Preconditions
+- Steps to execute
+- Expected Result
+- Actual Result
+- Status
+- Executed QA Name
+- Comments
+- Priority
 
 ### 🐞 Bug_Report_Template.md
 Standardized format to log bugs with fields like:
