@@ -1,0 +1,207 @@
+📄 Test Strategy Document
+Project: app.vwo.com – Login Page Validation
+Prepared By: QA Manager (20+ Years Experience)
+Reviewed & Approved By: QA Lead Panel (20+ Years Experience)
+Date: 4 May 2025
+
+Objective
+The goal of this Test Strategy is to define the testing scope, approach, resources, and deliverables for validating the login functionality of app.vwo.com. The intent is to ensure secure, robust, and user-friendly login behavior across all supported environments.
+
+Scope
+
+In-Scope
+
+Functional testing of login workflow:
+
+Valid credentials
+
+Invalid credentials (incorrect username/password)
+
+Blank field submissions
+
+Case sensitivity
+
+Locked/disabled account
+
+Password masking
+
+Remember Me functionality
+
+Error message validations
+
+UI/UX validation (responsive design, field alignment, tab orders)
+
+Security aspects of login:
+
+SQL Injection
+
+Brute force resilience
+
+Password in logs or network
+
+HTTPS validation
+
+API-level login request/response validation
+
+Cross-browser compatibility (Chrome, Firefox, Safari, Edge)
+
+Accessibility validation (WCAG 2.1 AA)
+
+Out-of-Scope
+
+Multi-factor authentication (if not implemented yet)
+
+"Forgot Password" workflow (covered in a separate module)
+
+User registration & profile management
+
+Backend database performance optimization
+
+Test Objectives
+
+Verify login form accepts and processes correct user credentials
+
+Ensure incorrect/invalid inputs are gracefully handled
+
+Validate that security best practices are in place for login
+
+Confirm visual consistency across major browsers
+
+Check error messages, navigation behavior, and form validations
+
+Test Approach
+
+Testing Types & Techniques
+
+Test Type	Approach / Tool
+Functional Testing	Manual + Automated UI Tests (Selenium/Cypress)
+Negative Testing	Manual test cases
+API Testing	Postman / Rest Assured
+UI/UX Testing	Exploratory, Responsive design checks
+Cross-browser Testing	BrowserStack (Chrome, Firefox, Edge, Safari)
+Security Testing	OWASP ZAP / Burp Suite
+Accessibility Testing	Axe, VoiceOver, NVDA (Screen Reader)
+
+Automation Coverage Plan
+
+Automate valid login test
+
+Automate invalid credential scenario
+
+Automate “Remember Me” state verification
+
+Include login smoke test in CI pipeline
+
+Test Data
+
+Test data scenarios will include:
+
+Valid users (active, valid credentials)
+
+Locked user account
+
+Users with expired credentials
+
+Special character edge cases
+
+Long/empty inputs
+
+Environments
+
+Staging URL: https://staging.app.vwo.com/login
+
+Browsers:
+
+Chrome latest + 2 previous
+
+Firefox latest + 1 previous
+
+Safari (macOS + iOS)
+
+Edge (Windows)
+
+Devices:
+
+Desktop
+
+Mobile Web (iPhone, Android)
+
+Entry & Exit Criteria
+
+Entry Criteria
+
+Login module code is deployed in test environment
+
+Test cases are authored and peer-reviewed
+
+API documentation (if applicable) is available
+
+Exit Criteria
+
+100% test case execution for valid/invalid scenarios
+
+No Critical/High bugs open
+
+Security vulnerabilities mitigated (OWASP Top 10)
+
+UI/UX issues accepted by design team
+
+Automation smoke suite passing consistently
+
+Deliverables
+
+Test Plan
+
+Test Scenarios & Cases
+
+Defect Reports (JIRA)
+
+Functional Test Report
+
+Automation Suite (CI-ready)
+
+Security Test Report
+
+Accessibility Compliance Summary
+
+Team
+
+Role	Name	Responsibility
+QA Lead	[Lead Name]	Strategy, Review
+QA Engineer	[Engineer 1]	Manual & Negative Testing
+Automation Engineer	[Engineer 2]	Selenium/Cypress Login Flows
+Security Tester	[Security Analyst]	OWASP/ZAP scans
+UX Analyst	[UX Specialist]	Usability Testing
+Backup QA	[QA Backup]	Contingency coverage
+
+Risks & Mitigation
+
+Risk	Mitigation
+Backend auth system delay	Mock services for prevalidation
+Frequent UI design changes	Short exploratory sessions daily
+Missing test data	Use API/database to seed required accounts
+
+Tools & Technologies
+
+Test Management: TestRail, Zephyr
+
+Automation: Selenium + TestNG / Cypress
+
+API Testing: Postman
+
+Cross-browser: BrowserStack
+
+Accessibility: Axe, Wave, NVDA
+
+CI/CD: GitHub Actions / Jenkins
+
+Security: OWASP ZAP, Burp Suite
+
+Approval
+
+Role	Name	Signature	Date
+QA Manager	[Your Name]	✔️	04-May-2025
+QA Lead	[Senior QA Lead]	✔️	04-May-2025
+Product Owner	[Product Owner Name]	⬜	TBD
+
+Would you like this in Word or PDF format as well, or should I go ahead and prepare test cases for these login scenarios next?
